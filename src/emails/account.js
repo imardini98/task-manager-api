@@ -11,8 +11,7 @@ const sendWelcomeEmail = (email, name) => {
         from: emailSender,
         subject: 'Thanks for joining in!',
         text: `Welcome to the app ${name}. Let me know how you get along with the app.`,
-        html: '<h1>Hello, welcome</h1>'
-    }).then( result => console.log('Email sent!'))
+    }).then( () => console.log('Email sent!'))
     .catch(error => console.log(error))
 }
 
